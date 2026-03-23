@@ -29,6 +29,7 @@ public class SelectionSorting {
             for (int j = i + 1; j < length; j++) {
                 if (numbers[j] < min) {
                     min = numbers[j];
+                    indexMin = j; //MISSING THIS LINE
                 }
             }
             swap(numbers, i, indexMin);
